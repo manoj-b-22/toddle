@@ -1,0 +1,11 @@
+download dependencies using "npm i" command
+
+To download it manually use the following command
+  npm i cors dotenv express jsonwebtoken mongoose
+
+To run the code use "npm start" command
+
+To run it manually use "node index.js" command
+
+postman collections url - https://www.postman.com/cryosat-geoscientist-94975704?tab=collections
+It contains three collections Users, Classrooms, Files
