@@ -31,7 +31,7 @@ async function getFileById(req, res, nxt) {
   try {
     file = await File.findById(req.params.id);
     if (file === null) {
-      return res.status(400).json({ message: 'file does not exist' });
+      return res.status(400).json({ message: `file does not exist for ${res.user.username} User` });
     }
   } catch (error) {
     return res.status(500).json({ message: error.message });

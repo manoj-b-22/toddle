@@ -32,9 +32,9 @@ async function createClassroom(req, res) {
 async function getClassroomById(req, res, nxt) {
   let classroom;
   try {
-    classroom = await Classroom.findById(req.params.id);
+    classroom = await Classroom.findOne({_id:req.params.id, owner: res.user.id});
     if (classroom === null) {
-      return res.status(400).json({ message: 'classroom does not exist' });
+      return res.status(400).json({ message: `classroom does not exist for ${res.user.username} Tutor` });
     }
   } catch (error) {
     return res.status(500).json({ message: error.message });

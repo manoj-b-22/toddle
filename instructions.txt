@@ -9,3 +9,5 @@ To run it manually use "node index.js" command
 
 postman collections url - https://www.postman.com/cryosat-geoscientist-94975704?tab=collections
 It contains three collections Users, Classrooms, Files
+
+heroku deployment link - https://blooming-crag-47100.herokuapp.com/
